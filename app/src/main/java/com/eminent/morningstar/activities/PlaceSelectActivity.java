@@ -68,9 +68,9 @@ public class PlaceSelectActivity extends ActionBarActivity implements DatePicker
         mSearchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent i = new Intent(PlaceSelectActivity.this,BusListActivity.class);
-                //PlaceSelectActivity.this.startActivity(i);
-                showAlertDialog(null,null);
+                Intent i = new Intent(PlaceSelectActivity.this,BusListActivity.class);
+                PlaceSelectActivity.this.startActivity(i);
+
             }
         });
     }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="places_array">
+        <item>Tenali</item>
+        <item>Vijayawada</item>
+        <item>Hyderabad</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Tirupathi</item>
+        <item>Nellore</item>
+        <item>Ongole</item>
+        <item>Chirala</item>
+        <item>Guntur</item>
+        <item>Vishakapatnam</item>
+        <item>Kavali</item>
+        <item>Bapatla</item>
+        <item>Chittoor</item>
+        <item>Eluru</item>
+        <item>pidugurala</item>
+    </string-array>
+</resources>

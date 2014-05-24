@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_bus_info_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_view_item_round_corners">
+
+    <TextView
+        android:id="@+id/id_model_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non A/C Airbus"
+        android:textSize="@dimen/bus_info_text_size"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/bus_info_margin_left"
+        android:paddingTop="@dimen/bus_info_margin_top"/>
+
+    <TextView
+        android:id="@+id/id_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09.00PM - 08.15AM"
+        android:textSize="@dimen/bus_info_text_size1"
+        android:maxLines="1"
+        android:layout_below="@+id/id_model_text"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/bus_info_margin_left"
+        android:paddingTop="@dimen/bus_info_margin_between_lines"/>
+
+    <TextView
+        android:id="@+id/id_available_seats_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_time_text"
+        android:text="Available: 23 Seats"
+        android:textSize="@dimen/bus_info_text_size1"
+        android:textStyle="italic"
+        android:textColor="@color/maroon"
+        android:paddingTop="@dimen/bus_info_margin_between_lines"
+        android:layout_marginLeft="@dimen/bus_info_margin_left"
+        android:paddingBottom="@dimen/bus_info_margin_bottom"/>
+
+    <TextView
+        android:id="@+id/id_cost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="RS 400"
+        android:textSize="@dimen/bus_info_text_size"
+        android:paddingBottom="@dimen/bus_info_margin_bottom"
+        android:layout_marginRight="@dimen/bus_info_margin_right"
+        android:textColor="@color/green_1"/>
+
+</RelativeLayout>

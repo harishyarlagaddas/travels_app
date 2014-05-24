@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.eminent.morningstar.activities.PlaceSelectActivity">
+
+        <TextView
+            android:id="@+id/id_from_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_text"
+            android:textSize="@dimen/place_select_activity_text_size" />
+
+        <Spinner
+            android:id="@+id/id_from_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/place_select_activity_spinner_height"
+            android:layout_below="@+id/id_from_text"
+            android:background="@drawable/spinner_boarder_lines" />
+
+        <TextView
+            android:id="@+id/id_to_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_from_spinner"
+            android:layout_marginTop="@dimen/place_select_activity_space_between_elements"
+            android:text="@string/to_text"
+            android:textSize="@dimen/place_select_activity_text_size" />
+
+        <Spinner
+            android:id="@+id/id_to_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/place_select_activity_spinner_height"
+            android:layout_below="@+id/id_to_text"
+            android:background="@drawable/spinner_boarder_lines" />
+
+        <TextView
+            android:id="@+id/id_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_to_spinner"
+            android:layout_marginTop="@dimen/place_select_activity_space_between_elements"
+            android:text="@string/date_of_journey_text"
+            android:textSize="@dimen/place_select_activity_text_size" />
+
+        <RelativeLayout
+            android:id="@+id/id_date_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_date"
+            android:background="@drawable/layout_round_corners">
+
+            <TextView
+                android:id="@+id/id_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="18"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_month_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/id_date_text"
+                android:gravity="bottom"
+                android:text="May 2014"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_day_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_month_text"
+                android:layout_toRightOf="@+id/id_date_text"
+                android:gravity="top"
+                android:text="Sunday"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/id_calender"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/calender_icon" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/id_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_date_section"
+            android:layout_marginTop="@dimen/place_select_activity_search_button_margin_top"
+            android:background="@drawable/button_round_corners"
+            android:text="@string/search_button_text" />
+
+    </RelativeLayout>
+</ScrollView>

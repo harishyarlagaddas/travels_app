@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="240dp"
+    android:layout_height="190dp" android:background="@drawable/layout_round_corners">
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Title"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="@color/my_green1"/>
+
+    <TextView
+        android:id="@+id/id_msg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/id_title"
+        android:text="Please select Destination Place"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/id_option_button"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/id_msg"
+        android:gravity="center"
+        android:text="OK"
+        android:textSize="24sp"
+        android:background="@color/my_green1"/>
+</RelativeLayout>

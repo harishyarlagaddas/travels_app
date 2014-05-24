@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/id_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_details_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/contact_details_layout_margin_top"
+        android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
+        android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:hint="@string/hint_name"
+        android:background="@drawable/layout_round_corners"/>
+
+    <RelativeLayout
+        android:id="@+id/id_age_section"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_details_item_height"
+        android:orientation="horizontal"
+        android:layout_below="@+id/id_name"
+        android:layout_marginTop="@dimen/contact_details_layout_margin_top"
+        android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
+        android:layout_marginRight="@dimen/contact_details_layout_margin_right">
+        
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_gender_section"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <RadioButton android:id="@+id/radio_pirates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"/>
+        <RadioButton android:id="@+id/radio_ninjas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"/>
+    </RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/id_gender_section"
+        android:hint="@string/hint_age"
+        android:background="@drawable/layout_round_corners"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/id_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_details_item_height"
+        android:layout_below="@+id/id_age_section"
+        android:layout_marginTop="@dimen/contact_details_layout_margin_top"
+        android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
+        android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:hint="@string/hint_email"
+        android:background="@drawable/layout_round_corners"/>
+
+    <EditText
+        android:id="@+id/id_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_details_item_height"
+        android:layout_below="@+id/id_email"
+        android:layout_marginTop="@dimen/contact_details_layout_margin_top"
+        android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
+        android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:hint="@string/hint_mobile"
+        android:background="@drawable/layout_round_corners"/>
+
+    <TextView
+        android:id="@+id/id_proof_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/id_proof_text"
+        android:layout_marginTop="@dimen/contact_details_layout_margin_top"
+        android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
+        android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:layout_below="@+id/id_mobile"/>
+    <Spinner
+        android:id="@+id/id_proof_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_details_item_height"
+        android:layout_below="@+id/id_proof_text"
+        android:layout_marginTop="@dimen/contact_details_layout_margin_top_small"
+        android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
+        android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:background="@drawable/spinner_boarder_lines" />
+
+    <EditText
+        android:id="@+id/id_proof_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_details_item_height"
+        android:hint="@string/hint_id_proof_number"
+        android:layout_below="@+id/id_proof_spinner"
+        android:layout_marginTop="@dimen/contact_details_layout_margin_top"
+        android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
+        android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:background="@drawable/layout_round_corners" />
+
+    <Button
+        android:id="@+id/id_continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/continue_button_text"
+        android:textSize="@dimen/continue_button_text_size"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"/>
+</RelativeLayout>

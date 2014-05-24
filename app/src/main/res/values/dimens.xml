@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Dimensions related to acitivty_place_select.xml -->
+    <dimen name="place_select_activity_text_size">18sp</dimen>
+    <dimen name="place_select_activity_space_between_elements">12dp</dimen>
+    <dimen name="place_select_activity_spinner_height">40dp</dimen>
+    <dimen name="place_select_activity_search_button_margin_top">25dp</dimen>
+
+    <!-- Dimensions related to bus_info.xml -->
+    <dimen name="bus_info_text_size">16sp</dimen>
+    <dimen name="bus_info_text_size1">12sp</dimen>
+    <dimen name="bus_info_margin_between_lines">10dp</dimen>
+    <dimen name="bus_info_margin_between_lines_1">30dp</dimen>
+    <dimen name="bus_info_margin_top">5dp</dimen>
+    <dimen name="bus_info_margin_bottom">5dp</dimen>
+    <dimen name="bus_info_margin_right">10dp</dimen>
+    <dimen name="bus_info_margin_left">10dp</dimen>
+
+    <!-- Dimensions related to seat_selection.xml -->
+    <dimen name="seat_layout_margin_top">10dp</dimen>
+    <dimen name="seat_layout_margin_bottom">5dp</dimen>
+    <dimen name="seat_layout_margin_left">5dp</dimen>
+    <dimen name="seat_layout_margin_right">40dp</dimen>
+    <dimen name="seat_section_margin_top">10dp</dimen>
+    <dimen name="steering_seat_margin_left">200dp</dimen>
+    <dimen name="seat1_margin_left">20dp</dimen>
+    <dimen name="seat2_margin_left">10dp</dimen>
+    <dimen name="seat3_margin_left">30dp</dimen>
+    <dimen name="seat4_margin_left">10dp</dimen>
+    <dimen name="boarding_points_margin_top">5dp</dimen>
+    <dimen name="boarding_points_margin_left">30dp</dimen>
+    <dimen name="boarding_points_margin_right">30dp</dimen>
+    <dimen name="boarding_points_text_size">18sp</dimen>
+    <dimen name="boarding_points_spinner_height">40dp</dimen>
+    <dimen name="seats_info_margin_top">10dp</dimen>
+    <dimen name="seats_info_image_width">20dp</dimen>
+    <dimen name="seats_info_image_height">20dp</dimen>
+    <dimen name="seats_info_text_size">10sp</dimen>
+    <dimen name="seats_info_individual_width">42dp</dimen>
+    <dimen name="seats_info_individual_gap">10dp</dimen>
+    <dimen name="continue_button_text_size">18sp</dimen>
+
+    <!-- Dimesions related to contact_details.xml -->
+    <dimen name="contact_details_item_height">50dp</dimen>
+    <dimen name="contact_details_layout_margin_left">10dp</dimen>
+    <dimen name="contact_details_layout_margin_right">10dp</dimen>
+    <dimen name="contact_details_layout_margin_top">20dp</dimen>
+    <dimen name="contact_details_layout_margin_top_small">5dp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Morning Star</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to PlaceSelectActivity -->
+    <string name="placeselectactivity_name">Select Your Route</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
+    <string name="date_of_journey_text">Date of Journey</string>
+    <string name="search_button_text">Search Buses</string>
+
+    <!-- Strings related to BusListActivity -->
+    <string name="buslistactivity_name">Select the bus</string>
+
+    <!-- Strings related to SeatSelectionActivity -->
+    <string name="seatselectionactivity_name">Select your boarding point and seat</string>
+    <string name="boarding_points_msg">Boarding Point</string>
+    <string name="tag_available">Available</string>
+    <string name="tag_booked">Booked</string>
+    <string name="tag_ladies">Ladies</string>
+    <string name="tag_selected">Selected</string>
+    <string name="tag_ladies_selected">LadiesSeatSelected</string>
+    <string name="toast_msg_no_bus_info">Current bus info is null. Hence can not proceed with this activity...</string>
+    <string name="continue_button_text">Continue</string>
+
+    <!-- Strings related to ContactDetailsActivity -->
+    <string name="contactdetailsactivity_name">Contact Details</string>
+    <string name="hint_name">  Full Name</string>
+    <string name="hint_age">  Age</string>
+    <string name="hint_email">  Email</string>
+    <string name="hint_mobile">  Mobile Number</string>
+    <string name="id_proof_text">Please select ID proof</string>
+    <string name="hint_id_proof_number">  ID Proof Number</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="id_proofs_array">
+        <item>Driving License</item>
+        <item>PAN Card</item>
+        <item>Passport</item>
+        <item>Ration Card</item>
+        <item>Voter ID Card</item>
+        <item>Aadhaar Card</item>
+    </string-array>
+</resources>

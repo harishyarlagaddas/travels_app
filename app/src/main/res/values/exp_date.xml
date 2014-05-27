@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exp_date_array">
+        <item>01 (Jan)</item>
+        <item>02 (Feb)</item>
+        <item>03 (Mar)</item>
+        <item>04 (Apr)</item>
+        <item>05 (May)</item>
+        <item>06 (Jun)</item>
+        <item>07 (Jul)</item>
+        <item>08 (Aug)</item>
+        <item>09 (Sep)</item>
+        <item>10 (Oct)</item>
+        <item>11 (Nov)</item>
+        <item>12 (Dec)</item>
+    </string-array>
+</resources>

@@ -1,8 +1,14 @@
 package com.eminent.morningstar.utils;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.util.Log;
+import android.view.View;
+
 import java.util.Calendar;
 
 public class Utils {
+    private static final String LOG_TAG = Utils.class.getSimpleName();
     public static String getMonthString(int month){
         switch (month){
             case Calendar.JANUARY:
@@ -76,5 +82,23 @@ public class Utils {
             timeStr = String.valueOf(time1)+"PM";
         }
         return timeStr;
+    }
+
+    public static void showInformationalAlertDialog(Context context, String title, String msg){
+        AlertDialogBuilder builder = new AlertDialogBuilder(context);
+        builder.setView(context);
+        builder.setTitle(title);
+        builder.setMessage(msg);
+        final AlertDialog dialog= builder.create();
+        builder.setOkButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(LOG_TAG, "ErrorDialog onClick");
+                if(null != dialog){
+                    dialog.dismiss();
+                }
+            }
+        });
+        dialog.show();
     }
 }

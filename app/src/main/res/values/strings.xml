@@ -5,17 +5,21 @@
     <string name="action_settings">Settings</string>
 
     <!-- Strings related to PlaceSelectActivity -->
-    <string name="placeselectactivity_name">Select Your Route</string>
+    <string name="place_select_activity_name">Select Your Route</string>
     <string name="from_text">From</string>
     <string name="to_text">To</string>
     <string name="date_of_journey_text">Date of Journey</string>
     <string name="search_button_text">Search Buses</string>
+    <string name="alert_wrong_date_title">Wrong Date Selection</string>
+    <string name="alert_wrong_date_msg">Selected date is earlier than today date. Please select the correct date.</string>
+    <string name="alert_wrong_place_title">Wrong Place Selection</string>
+    <string name="alert_wrong_place_msg">You have selected the same place for To and From. \nNo need to make reservation if you want to travel between same place :)</string>
 
     <!-- Strings related to BusListActivity -->
-    <string name="buslistactivity_name">Select the bus</string>
+    <string name="bus_list_activity_name">Select the bus</string>
 
     <!-- Strings related to SeatSelectionActivity -->
-    <string name="seatselectionactivity_name">Select your boarding point and seat</string>
+    <string name="seat_selection_activity_name">Select your boarding point and seat</string>
     <string name="boarding_points_msg">Boarding Point</string>
     <string name="tag_available">Available</string>
     <string name="tag_booked">Booked</string>
@@ -24,13 +28,48 @@
     <string name="tag_ladies_selected">LadiesSeatSelected</string>
     <string name="toast_msg_no_bus_info">Current bus info is null. Hence can not proceed with this activity...</string>
     <string name="continue_button_text">Continue</string>
+    <string name="alert_no_seat_selection_title">Wrong seat selection</string>
+    <string name="alert_no_seat_selection_msg">No Seat selected. Please select at least one seat to proceed further.</string>
 
     <!-- Strings related to ContactDetailsActivity -->
-    <string name="contactdetailsactivity_name">Contact Details</string>
+    <string name="contact_details_activity_name">Contact Details</string>
     <string name="hint_name">  Full Name</string>
     <string name="hint_age">  Age</string>
     <string name="hint_email">  Email</string>
     <string name="hint_mobile">  Mobile Number</string>
     <string name="id_proof_text">Please select ID proof</string>
     <string name="hint_id_proof_number">  ID Proof Number</string>
+    <string name="alert_contact_details_title">Invalid Contact Details</string>
+    <string name="alert_contact_details_name_invalid">Name field is empty. Please enter the valid name</string>
+    <string name="alert_contact_details_age_invalid">Age field is empty. Please enter the correct age.</string>
+    <string name="alert_contact_details_gender_invalid">Please select gender. (Either Male or Female)</string>
+    <string name="alert_contact_details_email_invalid">Email not looking good. Please enter the correct Email</string>
+    <string name="alert_contact_details_mobile_invalid">Mobile number is empty. Please enter the correct Mobile Number</string>
+    <string name="alert_contact_details_id_proof_number_invald">ID Proof number is empty. Please enter the correct ID Proof number</string>
+
+    <!-- Strings related to PaymentInfoActivity -->
+    <string name="payment_info_activity_name">Payment Details</string>
+    <string name="payment_info_payment_type_title">Payment Type</string>
+    <string name="payment_info_payment_details">Card Details</string>
+    <string name="hint_card_holder_name">Full Name (same as appears on card)</string>
+    <string name="hint_card_number">Card Number</string>
+    <string name="hint_year">Year</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="alert_payment_info_title">Invalid Payment Info</string>
+    <string name="alert_payment_info_name">Name field is empty. Please enter the valid name</string>
+    <string name="alert_payment_info_card_number">Card number is empty. Please enter the valid card number</string>
+    <string name="alert_payment_info_year">Year field is empty. Please enter the valid year</string>
+    <string name="alert_payment_info_cvv">CVV filed is empty. Please enter the valid CVV number</string>
+
+    <!-- Strings related to ReservationConfirmationActivity -->
+    <string name="confimation_title">Reservation Confirmed</string>
+    <string name="confirmation_details_headline">Details</string>
+    <string name="confirmation_details_name">Name: </string>
+    <string name="confirmation_details_age">Age: </string>
+    <string name="confirmation_details_seats">Allocated Seats: </string>
+    <string name="confirmation_details_id_proof">ID Proof Number: </string>
+    <string name="confirmation_details_email">Email: </string>
+    <string name="confirmation_details_mobile">Mobile: </string>
+    <string name="confirmation_details_note">Note: These details will be sent to your email and mobile.</string>
+    <string name="confirmation_details_done_button_text">Done</string>
 </resources>

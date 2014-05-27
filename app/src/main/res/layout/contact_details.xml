@@ -12,6 +12,7 @@
         android:layout_marginTop="@dimen/contact_details_layout_margin_top"
         android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
         android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:paddingLeft="@dimen/contact_details_layout_margin_left"
         android:hint="@string/hint_name"
         android:background="@drawable/layout_round_corners"/>
 
@@ -33,21 +34,25 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:layout_alignParentRight="true">
-        <RadioButton android:id="@+id/radio_pirates"
+        <RadioButton android:id="@+id/id_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Male"/>
-        <RadioButton android:id="@+id/radio_ninjas"
+        <RadioButton android:id="@+id/id_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"/>
     </RadioGroup>
     <EditText
+        android:id="@+id/id_age"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_toLeftOf="@+id/id_gender_section"
+        android:paddingLeft="@dimen/contact_details_layout_margin_left"
         android:hint="@string/hint_age"
+        android:inputType="phone"
+        android:digits="1234567890"
         android:background="@drawable/layout_round_corners"/>
     </RelativeLayout>
     <EditText
@@ -58,6 +63,7 @@
         android:layout_marginTop="@dimen/contact_details_layout_margin_top"
         android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
         android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:paddingLeft="@dimen/contact_details_layout_margin_left"
         android:hint="@string/hint_email"
         android:background="@drawable/layout_round_corners"/>
 
@@ -69,7 +75,10 @@
         android:layout_marginTop="@dimen/contact_details_layout_margin_top"
         android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
         android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:paddingLeft="@dimen/contact_details_layout_margin_left"
         android:hint="@string/hint_mobile"
+        android:inputType="phone"
+        android:digits="1234567890"
         android:background="@drawable/layout_round_corners"/>
 
     <TextView
@@ -84,7 +93,7 @@
     <Spinner
         android:id="@+id/id_proof_spinner"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/contact_details_item_height"
+        android:layout_height="@dimen/contact_details_spinner_height"
         android:layout_below="@+id/id_proof_text"
         android:layout_marginTop="@dimen/contact_details_layout_margin_top_small"
         android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
@@ -100,6 +109,7 @@
         android:layout_marginTop="@dimen/contact_details_layout_margin_top"
         android:layout_marginLeft="@dimen/contact_details_layout_margin_left"
         android:layout_marginRight="@dimen/contact_details_layout_margin_right"
+        android:paddingLeft="@dimen/contact_details_layout_margin_left"
         android:background="@drawable/layout_round_corners" />
 
     <Button

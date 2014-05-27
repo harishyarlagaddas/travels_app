@@ -2,7 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="240dp"
-    android:layout_height="190dp" android:background="@drawable/layout_round_corners">
+    android:layout_height="190dp" android:background="@drawable/alert_dialog_boarder_lines">
 
     <TextView
         android:id="@+id/id_title"
@@ -22,8 +22,8 @@
         android:textSize="18sp"
         android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/id_option_button"
+    <Button
+        android:id="@+id/id_ok_option_button"
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:layout_below="@+id/id_msg"

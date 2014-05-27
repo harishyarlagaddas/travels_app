@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_payment_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payment_info_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/payment_info_margin_left"
+        android:layout_marginRight="@dimen/payment_info_margin_left"
+        android:text="@string/payment_info_payment_type_title"
+        android:textSize="@dimen/payment_info_title_text_size"
+        android:gravity="center_vertical"/>
+    <Spinner
+        android:id="@+id/id_payment_type_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/payment_info_spinner_height"
+        android:layout_below="@+id/id_payment_type_title"
+        android:layout_marginLeft="@dimen/payment_info_margin_left"
+        android:layout_marginRight="@dimen/payment_info_margin_left"
+        android:background="@drawable/spinner_boarder_lines" />
+
+    <TextView
+        android:id="@+id/id_payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/payment_info_item_height"
+        android:layout_marginTop="@dimen/payment_info_payment_section_margin_top"
+        android:layout_marginLeft="@dimen/payment_info_margin_left"
+        android:layout_marginRight="@dimen/payment_info_margin_left"
+        android:layout_below="@+id/id_payment_type_spinner"
+        android:text="@string/payment_info_payment_details"
+        android:textSize="@dimen/payment_info_text_size"/>
+
+    <EditText
+        android:id="@+id/id_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payment_info_item_height"
+        android:layout_below="@+id/id_payment_title"
+        android:layout_marginTop="@dimen/payment_info_item_margin_top"
+        android:layout_marginLeft="@dimen/payment_info_margin_left"
+        android:layout_marginRight="@dimen/payment_info_margin_left"
+        android:paddingLeft="@dimen/payment_info_padding_left"
+        android:hint="@string/hint_card_holder_name"
+        android:background="@drawable/layout_round_corners"/>
+
+    <EditText
+        android:id="@+id/id_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payment_info_item_height"
+        android:layout_below="@+id/id_name"
+        android:layout_marginTop="@dimen/payment_info_item_margin_top"
+        android:layout_marginLeft="@dimen/payment_info_margin_left"
+        android:layout_marginRight="@dimen/payment_info_margin_left"
+        android:paddingLeft="@dimen/payment_info_padding_left"
+        android:hint="@string/hint_card_number"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:background="@drawable/layout_round_corners"/>
+
+    <RelativeLayout
+        android:id="@+id/id_date_cvv_section"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payment_info_item_height"
+        android:layout_below="@+id/id_card_number"
+        android:layout_marginTop="@dimen/payment_info_item_margin_top"
+        android:layout_marginLeft="@dimen/payment_info_margin_left"
+        android:layout_marginRight="@dimen/payment_info_margin_left">
+
+        <Spinner
+            android:id="@+id/id_expiry_month"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/spinner_boarder_lines"/>
+
+        <EditText
+            android:id="@+id/id_expiry_year"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_year"
+            android:layout_marginLeft="@dimen/payment_info_margin_left"
+            android:paddingLeft="@dimen/payment_info_padding_left"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:layout_toRightOf="@+id/id_expiry_month"
+            android:background="@drawable/layout_round_corners"/>
+
+        <EditText
+            android:id="@+id/id_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_cvv"
+            android:layout_marginLeft="@dimen/payment_info_margin_left"
+            android:paddingLeft="@dimen/payment_info_padding_left"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:layout_toRightOf="@+id/id_expiry_year"
+            android:background="@drawable/layout_round_corners"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/id_continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payment_info_continue_button_height"
+        android:text="@string/continue_button_text"
+        android:textSize="@dimen/continue_button_text_size"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"/>
+</RelativeLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/confirmation_title_height"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right"
+        android:text="@string/confimation_title"
+        android:textSize="@dimen/confirmation_title_text_size"
+        android:textColor="@color/my_green1"
+        android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/id_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmation_details_headline"
+        android:textSize="@dimen/confirmation_title_text_size1"
+        android:textColor="@color/my_green1"
+        android:layout_below="@+id/id_title"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right"/>
+
+    <ImageView
+        android:id="@+id/id_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@color/my_green1"
+        android:layout_below="@+id/id_details_title"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right"/>
+
+    <RelativeLayout
+        android:id="@+id/id_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_line"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top1"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right">
+        
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_details_name"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/id_name_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harish"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_toRightOf="@+id/id_name"
+            android:layout_marginLeft="@dimen/confirmation_layout_margin_left"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_age_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_name_layout"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top1"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right">
+
+        <TextView
+            android:id="@+id/id_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_details_age"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/id_age_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32 Years"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_toRightOf="@+id/id_age"
+            android:layout_marginLeft="@dimen/confirmation_layout_margin_left"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_seats_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_age_layout"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top1"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right">
+
+        <TextView
+            android:id="@+id/id_seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_details_seats"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/id_seats_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B1,B2"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_toRightOf="@+id/id_seats"
+            android:layout_marginLeft="@dimen/confirmation_layout_margin_left"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_proof_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_seats_layout"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top1"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right">
+
+        <TextView
+            android:id="@+id/id_proof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_details_id_proof"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/id_proof_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123456789"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_toRightOf="@+id/id_proof"
+            android:layout_marginLeft="@dimen/confirmation_layout_margin_left"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_proof_layout"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top1"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right">
+
+        <TextView
+            android:id="@+id/id_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_details_email"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/id_email_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyName@Mycompany.net"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/id_email"
+            android:layout_marginLeft="@dimen/confirmation_layout_margin_left"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/id_mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_email_layout"
+        android:layout_marginTop="@dimen/confirmation_layout_margin_top1"
+        android:layout_marginLeft="@dimen/confirmation_layout_margin_left1"
+        android:layout_marginRight="@dimen/confirmation_layout_margin_right">
+
+        <TextView
+            android:id="@+id/id_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_details_mobile"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/id_mobile_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="987654321"
+            android:textSize="@dimen/confirmation_title_text_size1"
+            android:textColor="@color/my_green1"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/id_mobile"
+            android:layout_marginLeft="@dimen/confirmation_layout_margin_left"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/id_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_done_button"
+        android:text="@string/confirmation_details_note"
+        android:textSize="@dimen/confirmation_title_text_size2"
+        android:textColor="@color/my_green1"/>
+
+    <Button
+        android:id="@+id/id_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/confirmation_details_done_button_text"
+        android:textSize="@dimen/continue_button_text_size"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"/>
+</RelativeLayout>

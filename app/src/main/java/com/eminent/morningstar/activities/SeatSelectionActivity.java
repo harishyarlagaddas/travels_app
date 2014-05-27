@@ -1,6 +1,7 @@
 package com.eminent.morningstar.activities;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
@@ -14,7 +15,9 @@ import android.widget.Toast;
 
 import com.eminent.morningstar.R;
 import com.eminent.morningstar.model.BusInfo;
+import com.eminent.morningstar.utils.AlertDialogBuilder;
 import com.eminent.morningstar.utils.LocalPreferences;
+import com.eminent.morningstar.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -74,8 +77,15 @@ public class SeatSelectionActivity extends Activity{
             @Override
             public void onClick(View v) {
                 Log.d(LOG_TAG,"Continue Button onClick");
-                Intent intent = new Intent(SeatSelectionActivity.this,ContactDetailsActivity.class);
-                SeatSelectionActivity.this.startActivity(intent);
+                if(isAnySeatSelected()) {
+                    LocalPreferences.storeSelectedSeats("C3,C4 seats");
+                    Intent intent = new Intent(SeatSelectionActivity.this, ContactDetailsActivity.class);
+                    SeatSelectionActivity.this.startActivity(intent);
+                }else{
+                    String title = SeatSelectionActivity.this.getString(R.string.alert_no_seat_selection_title);
+                    String msg = SeatSelectionActivity.this.getString(R.string.alert_no_seat_selection_msg);
+                    Utils.showInformationalAlertDialog(SeatSelectionActivity.this,title,msg);
+                }
             }
         });
     }
@@ -201,5 +211,15 @@ public class SeatSelectionActivity extends Activity{
             mSeatImages.get(i-1).setImageResource(R.drawable.seat_ladies);
             mSeatImages.get(i-1).setTag(SeatSelectionActivity.this.getString(R.string.tag_ladies));
         }
+    }
+
+    private boolean isAnySeatSelected(){
+        for(ImageView view: mSeatImages){
+            if(view.getTag().toString().equals(SeatSelectionActivity.this.getString(R.string.tag_selected))
+               || view.getTag().toString().equals(SeatSelectionActivity.this.getString(R.string.tag_ladies_selected))){
+                return true;
+            }
+        }
+        return false;
     }
 }
